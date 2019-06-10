@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">TestAccelerometer</string>
+    <string name="first_message">click to test phone movement </string>
+    <string name="button_text">test rotation</string>
+    <string name="put_data_mainY">movement=0</string>
+    <string name="put_data_mainX">movement=0</string>
+    <string name="put_data_mainZ">movement=0</string>
+    <string name="second_message">rotation stuff goes here</string>
+    <string name="button_EndTest">end test</string>
+    <string name="caliberate_message"> you can move phone for 5 seconds&#8230;</string>
+
+
+</resources>

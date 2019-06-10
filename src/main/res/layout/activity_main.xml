@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.g.testaccelerometer.MainActivity">
+
+    <!--we need a button here to start the accelrometer test -->
+    <!--as of tonight emulator screen density wrong. need to fix:
+    Using configuration qualifiers
+"Android supports several configuration qualifiers that allow you to control how
+the system selects your alternative resources based on the
+ characteristics of the current device screen.."
+https://developer.android.com/guide/practices/screens_support.html
+    -->
+    <TextView
+        android:id="@+id/textHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/first_message"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintVertical_bias="1.0"
+        android:layout_marginRight="7dp"
+        app:layout_constraintRight_toRightOf="@+id/button"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="@+id/button"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="7dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:onClick="onClickBeginTest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_text"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.498"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1" />
+
+
+    <TextView
+        android:id="@+id/distanceMainY"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/put_data_mainY"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintVertical_bias="0.722"
+        android:layout_marginRight="7dp"
+        app:layout_constraintRight_toRightOf="@+id/button"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="@+id/button"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="7dp"
+        app:layout_constraintHorizontal_bias="0.484" />
+
+    <TextView
+        android:id="@+id/distanceMainX"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/put_data_mainX"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintVertical_bias="0.171"
+        android:layout_marginRight="7dp"
+        app:layout_constraintRight_toRightOf="@+id/button"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="@+id/button"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="7dp"
+        app:layout_constraintHorizontal_bias="0.484" />
+
+    <TextView
+        android:id="@+id/distanceMainZ"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/put_data_mainZ"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintVertical_bias="0.439"
+        android:layout_marginRight="7dp"
+        app:layout_constraintRight_toRightOf="@+id/button"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="@+id/button"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="7dp"
+        app:layout_constraintHorizontal_bias="0.484" />
+</android.support.constraint.ConstraintLayout>
